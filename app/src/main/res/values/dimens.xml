@@ -1,0 +1,45 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!-- Topbar Common Height -->
+    <dimen name="topbar_height">45dp</dimen>
+
+    <!--special_item-->
+    <dimen name="special_edittext_width">100dip</dimen>
+    <dimen name="special_edittext_padding">10dip</dimen>
+    <!-- Text Common Size parse px to sp -->
+    <dimen name="size_60">40sp</dimen>
+    <dimen name="size_54">30sp</dimen>
+    <dimen name="size_34">19sp</dimen>
+    <dimen name="size_32">18sp</dimen>
+    <dimen name="size_30">17sp</dimen>
+    <dimen name="size_28">16sp</dimen>
+    <dimen name="size_26">15sp</dimen>
+    <dimen name="size_24">14sp</dimen>
+    <dimen name="size_22">13sp</dimen>
+    <dimen name="size_20">12sp</dimen>
+    <dimen name="size_18">10sp</dimen>
+
+
+    <dimen name="tv_size_60">30sp</dimen>
+    <dimen name="tv_size_40">20sp</dimen>
+    <dimen name="tv_size_36">18sp</dimen>
+    <dimen name="tv_size_32">16sp</dimen>
+    <dimen name="tv_size_30">15sp</dimen>
+    <dimen name="tv_size_28">14sp</dimen>
+    <dimen name="tv_size_26">13sp</dimen>
+    <dimen name="tv_size_24">12sp</dimen>
+    <dimen name="tv_size_22">11sp</dimen>
+    <dimen name="tv_size_20">10sp</dimen>
+
+
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+
+    <dimen name="prb_symbolic_tick_default_text_size">15sp</dimen>
+    <dimen name="prb_drawable_tick_default_spacing">1dp</dimen>
+</resources>

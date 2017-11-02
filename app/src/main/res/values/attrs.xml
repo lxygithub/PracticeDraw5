@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Topbar Attrs -->
+    <declare-styleable name="Topbar">
+        <attr name="topbarBackBg" format="reference"/>
+        <attr name="topbarBackText" format="string"></attr>
+        <attr name="topbarBackTextColor" format="color"></attr>
+        <attr name="topbarTitleText" format="string"></attr>
+        <attr name="topbarTitleBelowBg" format="reference"></attr>
+        <attr name="topbarTitleTextColor" format="color"></attr>
+        <attr name="topbarTitleTextSize" format="dimension"></attr>
+        <attr name="topbarControlOneBg" format="reference"></attr>
+        <attr name="topbarControlOneText" format="string"></attr>
+        <attr name="topbarControlTwoBg" format="reference"></attr>
+        <attr name="topbarControlTwoText" format="string"></attr>
+        <attr name="topbarControlDotBg" format="reference"></attr>
+        <attr name="topbarControlOneTextColor" format="color"></attr>
+        <attr name="topbarControlTwoTextColor" format="color"></attr>
+        <attr name="topbarBackMode">
+            <enum name="other" value="0"></enum>
+            <enum name="normal" value="1"></enum>
+            <enum name="finish" value="2"></enum>
+        </attr>
+        <attr name="topbarTitleMode">
+            <enum name="click" value="0"></enum>
+            <enum name="normal" value="1"></enum>
+        </attr>
+    </declare-styleable>
+
+    <!-- Zxing Attrs -->
+    <declare-styleable name="ViewFinderView">
+        <attr name="longAround" format="dimension"></attr>
+    </declare-styleable>
+
+    <!-- Autoload Attrs -->
+    <declare-styleable name="ZSwipeItem">
+        <attr name="drag_edge" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+            <enum name="top" value="2"/>
+            <enum name="bottom" value="3"/>
+        </attr>
+        <attr name="horizontalSwipeOffset" format="dimension"/>
+        <attr name="verticalSwipeOffset" format="dimension"/>
+        <attr name="show_mode" format="enum">
+            <enum name="lay_down" value="0"/>
+            <enum name="pull_out" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <!-- 圆形ImageView -->
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension"/>
+        <attr name="border_color" format="color"/>
+    </declare-styleable>
+
+    <!-- softlist -->
+    <declare-styleable name="ClearEditTextStrong">
+        <attr name="clearTextSize" format="dimension"/>
+        <attr name="clearHint" format="string"/>
+    </declare-styleable>
+
+    <!-- MenuDraw所需属性 -->
+    <attr name="menuDrawerStyle" format="reference"/>
+    <declare-styleable name="MenuDrawer">
+        <attr name="mdContentBackground" format="reference"/>
+        <attr name="mdMenuBackground" format="reference"/>
+        <attr name="mdMenuSize" format="dimension"/>
+        <attr name="mdActiveIndicator" format="reference"/>
+        <attr name="mdDropShadowEnabled" format="boolean"/>
+        <attr name="mdDropShadowSize" format="dimension"/>
+        <attr name="mdDropShadowColor" format="color"/>
+        <attr name="mdDropShadow" format="reference"/>
+        <attr name="mdTouchBezelSize" format="dimension"/>
+    </declare-styleable>
+    <!--自适应屏幕布局-->
+    <declare-styleable name="AutoScalingLayout">
+
+        <attr name="designWidth" format="dimension"/>
+
+        <attr name="designHeight" format="dimension"/>
+
+        <attr name="autoScaleEnable" format="boolean"/>
+
+        <attr name="autoScaleType" format="string"/>
+
+    </declare-styleable>
+
+    <!--RectAnimationView Attrs-->
+    <declare-styleable name="RectAnimationView">
+        <attr name="rectColor" format="color"></attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="PullToRefresh">
+
+        <!-- A drawable to use as the background of the Refreshable View -->
+        <attr name="ptrRefreshableViewBackground" format="reference|color"/>
+
+        <!-- A drawable to use as the background of the Header and Footer Loading Views -->
+        <attr name="ptrHeaderBackground" format="reference|color"/>
+
+        <!-- Text Color of the Header and Footer Loading Views -->
+        <attr name="ptrHeaderTextColor" format="reference|color"/>
+
+        <!-- Text Color of the Header and Footer Loading Views Sub Header -->
+        <attr name="ptrHeaderSubTextColor" format="reference|color"/>
+
+        <!-- Mode of Pull-to-Refresh that should be used -->
+        <attr name="ptrMode">
+            <flag name="disabled" value="0x0"/>
+            <flag name="pullFromStart" value="0x1"/>
+            <flag name="pullFromEnd" value="0x2"/>
+            <flag name="both" value="0x3"/>
+            <flag name="manualOnly" value="0x4"/>
+
+            <!-- These last two are depreacted -->
+            <flag name="pullDownFromTop" value="0x1"/>
+            <flag name="pullUpFromBottom" value="0x2"/>
+        </attr>
+
+        <!-- Whether the Indicator overlay(s) should be used -->
+        <attr name="ptrShowIndicator" format="reference|boolean"/>
+
+        <!-- Drawable to use as Loading Indicator. Changes both Header and Footer. -->
+        <attr name="ptrDrawable" format="reference"/>
+
+        <!-- Drawable to use as Loading Indicator in the Header View. Overrides value set in ptrDrawable. -->
+        <attr name="ptrDrawableStart" format="reference"/>
+
+        <!-- Drawable to use as Loading Indicator in the Footer View. Overrides value set in ptrDrawable. -->
+        <attr name="ptrDrawableEnd" format="reference"/>
+
+        <!-- Whether Android's built-in Over Scroll should be utilised for Pull-to-Refresh. -->
+        <attr name="ptrOverScroll" format="reference|boolean"/>
+
+        <!-- Base text color, typeface, size, and style for Header and Footer Loading Views -->
+        <attr name="ptrHeaderTextAppearance" format="reference"/>
+
+        <!-- Base text color, typeface, size, and style for Header and Footer Loading Views Sub Header -->
+        <attr name="ptrSubHeaderTextAppearance" format="reference"/>
+
+        <!-- Style of Animation should be used displayed when pulling. -->
+        <attr name="ptrAnimationStyle">
+            <flag name="rotate" value="0x0"/>
+            <flag name="flip" value="0x1"/>
+        </attr>
+
+        <!-- Whether the user can scroll while the View is Refreshing -->
+        <attr name="ptrScrollingWhileRefreshingEnabled" format="reference|boolean"/>
+
+        <!--
+        	Whether PullToRefreshListView has it's extras enabled. This allows the user to be
+        	able to scroll while refreshing, and behaves better. It acheives this by adding
+        	Header and/or Footer Views to the ListView.
+        -->
+        <attr name="ptrListViewExtrasEnabled" format="reference|boolean"/>
+
+        <!--
+        	Whether the Drawable should be continually rotated as you pull. This only
+        	takes effect when using the 'Rotate' Animation Style.
+        -->
+        <attr name="ptrRotateDrawableWhilePulling" format="reference|boolean"/>
+
+        <!-- BELOW HERE ARE DEPRECEATED. DO NOT USE. -->
+        <attr name="ptrAdapterViewBackground" format="reference|color"/>
+        <attr name="ptrDrawableTop" format="reference"/>
+        <attr name="ptrDrawableBottom" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="ProperRatingBar">
+
+        <!-- Total number of ticks to show. Default is '5' -->
+        <attr name="prb_totalTicks" format="integer"/>
+
+        <!-- Use this to set rating from xml. Default is '3' -->
+        <attr name="prb_defaultRating" format="integer"/>
+
+        <!-- If set to 'true' - use will be able to change rating by clicking. Default is 'false' -->
+        <attr name="prb_clickable" format="boolean"/>
+
+
+        <!-- Symbol to be used as a tick. Default is '$' -->
+        <attr name="prb_symbolicTick" format="string"/>
+
+        <!-- Text size of symbolic tick. Default is '15sp' -->
+        <attr name="android:textSize"/>
+
+        <!-- Text style of symbolic tick. Possible: 'bold', 'italic', 'normal'. Default is 'normal'. -->
+        <attr name="android:textStyle"/>
+
+        <!-- Color of symbolic tick that is not selected (not rated). Default is '#FF000000' (black). -->
+        <attr name="prb_symbolicTickNormalColor" format="reference|color"/>
+
+        <!-- Color of symbolic tick that is selected (rated). Default is '#FF888888' (gray). -->
+        <attr name="prb_symbolicTickSelectedColor" format="reference|color"/>
+
+
+        <!-- Drawable resource to use as a tick that is not selected (not rated). No default value. -->
+        <attr name="prb_tickNormalDrawable" format="reference"/>
+
+        <!-- Drawable resource to use as a tick that is selected (rated). No default value. -->
+        <attr name="prb_tickSelectedDrawable" format="reference"/>
+
+        <!-- Margin to be applied to tick drawables. Only applies to drawable-type ticks. Default is '1dp' (gray). -->
+        <attr name="prb_tickSpacing" format="dimension"/>
+        <!--等级-->
+        <attr name="prb_level" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="qq_level_view">
+        <attr name="level" format="integer"/>
+    </declare-styleable>
+
+    <item name="prb_tick_tag_id" type="id"/>
+
+</resources>
